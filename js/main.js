@@ -130,3 +130,11 @@ function findShort(s){
 // "GCAT"  =>  "GCAU"
 // The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
 
+function DNAtoRNA(dna) {
+  //Parameter: str, combination of 'GCAT'
+  //Return: return string
+  //Example: 'GCAT' >> 'GCAU'
+  //Psuedocode: take string, replace all instances of str 'T' with 'U'
+  dna = dna.replaceAll('T','U')
+  return dna
+}
