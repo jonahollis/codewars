@@ -261,9 +261,29 @@ var squared = (n) => Math.sqrt(n) % 1 === 0 ? true : false
 
 // --------------------------------------------------------------
 
-// [8kyu] - DESCRIPTION - Title - Description text
+// [7kyu] - DESCRIPTION - Anagram Detection - An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
 
-// [P]arameters - 
-// [R]eturns - 
+// Note: anagrams are case insensitive
+
+// Complete the function to return true if the two arguments given are anagrams of each other; return false otherwise.
+
+// Examples
+// "foefet" is an anagram of "toffee"
+
+// "Buckethead" is an anagram of "DeathCubeK"
+
+// [P]arameters - two strings, a test and control
+// [R]eturns - true if test string is an anagram of original string
 // [E]xample - input:  output: 
 // [P]seudo Code: 
+
+
+var isAnagram = function(test, original) {
+  test = test.toLowerCase().split('').sort().toString()
+  original = original.toLowerCase().split('').sort().toString()
+  if(test === original){
+    return true
+  }else{
+    return false
+  }
+};
