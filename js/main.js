@@ -50,11 +50,11 @@ var number = function(array){
 
 // Solution using map method: 
 
-const number = function(array) {
-  return array.map(function (line, index) {
-    return (index + 1) + ": " + line;
-  });
-}
+// const number = function(array) {
+//   return array.map(function (line, index) {
+//     return (index + 1) + ": " + line;
+//   });
+// }
 
 // --------------------------------------------------------------
 
@@ -102,4 +102,17 @@ function areYouPlayingBanjo(name) {
   }else{
     return name + " does not play banjo"
   }
+}
+
+// --------------------------------------------------------------
+
+// [8kyu] - DESCRIPTION - Simple, given a string of words, return the length of the shortest word(s).
+
+// String will never be empty and you do not need to account for different data types.
+
+function findShort(s){
+  s = s.split(' ')
+  s.reduce((a,b) => {
+    return a.length <= b.length ? a : b
+  })
 }
