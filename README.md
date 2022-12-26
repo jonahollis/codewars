@@ -6,9 +6,7 @@
 
 - [Repo](https://github.com/Rohit19060/<project-name> "CodeWars Solutions & Documentation Repo")
 
-- [Live](<Homepage url> "Live View")
-
-- [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
+- [Bugs]([https://github.com/Rohit19060/<project-name>/issues](https://github.com/jonahollis/codewars/issues) "Issues Page")
 
 
 ## Screenshots
