@@ -33,7 +33,7 @@
 
 **Jonah Hollis**
 
-- [Profile](https://github.com/jonahollis "Rohit jain")
+- [Profile](https://github.com/jonahollis "Jonah Hollis")
 - [Email](mailto:jonahquinnhollis@gmail.com?subject=Hi "Hi!")
 - [Website](https://www.jonahhollis.com "Welcome")
 
