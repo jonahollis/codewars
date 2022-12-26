@@ -1,6 +1,6 @@
 <h1 align="center"><project-name>CodeWars Solutions & Documentation</h1>
 
-<p align="center"><project-description>Find my latest codewars solutions and their documentation. Please note, while efficiency is important, I tend to focus on readability when writing solutions.</p>
+<p align="center"><project-description>Find my latest codewars solutions and their corresponding documentation. Please note, while dry code is critical, I tend to focus on readability when writing solutions.</p>
 
 ## Links
 
