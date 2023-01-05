@@ -103,31 +103,3 @@ function areYouPlayingBanjo(name) {
     return name + " does not play banjo"
   }
 }
-
-
-// --------------------------------------------------------------
-
-// [8kyu] - DESCRIPTION - Sentence Smash
-// Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
-
-// Example
-// ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
-
-function smash (words) {
-  return words.join(' ');
-};
-
-
-// --------------------------------------------------------------
-
-// [8kyu] - DESCRIPTION - Reverse Words - Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
-
-// Examples
-// "This is an example!" ==> "sihT si na !elpmaxe"
-// "double  spaces"      ==> "elbuod  secaps"
-
-
-function reverseWords(str) {
-  // Go for it
-  return str.split("").reverse().join("").split(" ").reverse().join(" ")
-}
