@@ -194,3 +194,44 @@ function openOrSenior(data){
   return results
 }
 
+// --------------------------------------------------------------
+
+// [8kyu] - DESCRIPTION - Sum Arrays - Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+// Examples
+// Input: [1, 5.2, 4, 0, -1]
+// Output: 9.2
+
+// Input: []
+// Output: 0
+
+// Input: [-2.398]
+// Output: -2.398
+
+// Assumptions
+// You can assume that you are only given numbers.
+// You cannot assume the size of the array.
+// You can assume that you do get an array and if the array is empty, return 0.
+// What We're Testing
+// We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
+// Advanced users may find this extremely easy and can easily write this in one line.
+
+
+function sum (arr) {
+  // [P]arameters - array of integers
+  // [R]eturns - single interger of sum of array
+  // [E]xample - input:  [1, 2] output: 3
+  // [P]seudo Code: return argument with summation of array items using built-in JS .reduce method called on argument
+  
+  
+  return arr.reduce((a, b) => a + b, 0)
+};
+
+// --------------------------------------------------------------
+
+// [8kyu] - DESCRIPTION - Title - Description text
+
+// [P]arameters - 
+// [R]eturns - 
+// [E]xample - input:  output: 
+// [P]seudo Code: 
