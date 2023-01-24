@@ -254,9 +254,9 @@ function sum (arr) {
 // [P]seudo Code: 
 
 
-// var squared = (n) => Math.sqrt(n) * Math.sqrt(n) === n && Math.sqrt(n) % 1 === 0 ? true : false
+// var isSquared = (n) => Math.sqrt(n) * Math.sqrt(n) === n && Math.sqrt(n) % 1 === 0 ? true : false
 
-var squared = (n) => Math.sqrt(n) * Math.sqrt(n) === n && Math.sqrt(n) % 1 === 0 ? true : false
+var squared = (n) => Math.sqrt(n) % 1 === 0 ? true : false
 
 
 // --------------------------------------------------------------
