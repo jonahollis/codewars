@@ -287,3 +287,47 @@ var isAnagram = function(test, original) {
     return false
   }
 };
+
+// --------------------------------------------------------------
+
+// [7kyu] - DESCRIPTION - Isograms - An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+// Example: (Input --> Output)
+
+// "Dermatoglyphics" --> true "aba" --> false "moOse" --> false (ignore letter case)
+
+// isIsogram "Dermatoglyphics" = true
+// isIsogram "moose" = false
+// isIsogram "aba" = false
+
+// [P]arameters - one string
+// [R]eturns - true if str is isogram, false if not
+// [E]xample - input:  'less' output: false
+// [P]seudo Code: 
+
+
+function isIsogram(str){
+  // remove case as a factor
+  str = str.toLowerCase()
+  // return true if string is empty
+  if(str === ''){
+    return true
+  }else{
+    // convert string into array
+    let arr = str.split('')
+    // filter array of any duplicates
+    const toFindDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) !== index)
+    // assign variable to duplicates found
+    const duplicateItems = toFindDuplicates(arr);
+    // if duplicates array contains any items, then test str is not an isogram
+    if(duplicateItems.length > 0){
+      return false
+    }else{
+      return true
+    }
+  }
+
+} 
+
+
+// https://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/javascript
