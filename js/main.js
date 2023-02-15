@@ -330,4 +330,26 @@ function isIsogram(str){
 } 
 
 
+// --------------------------------------------------------------
+
+// [8kyu] - DESCRIPTION - Square(n) Sum - Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+// For example, for [1, 2, 2] it should return 9 
+
+// [P]arameters - array of numbers
+// [R]eturns - sum of square of each number in array
+// [E]xample - input:  [1,2,3] output: 9
+// [P]seudo Code: 
+
+function squareSum(numbers){
+  // square each number in array
+  numbers = numbers.map(x => Math.pow(x,2))
+  // sum total of array items
+  numbers = numbers.reduceRight((acc, cur) => acc + cur, 0)
+  return numbers
+}
+
+
 // https://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/javascript
+
+squareSum([0, 3, 4, 5])
