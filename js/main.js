@@ -350,6 +350,24 @@ function squareSum(numbers){
 }
 
 
-// https://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/javascript
+// --------------------------------------------------------------
 
-squareSum([0, 3, 4, 5])
+// [7kyu] - DESCRIPTION - In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+// For example, filter_list([1,2,'a','b']) == [1,2]
+// filter_list([1,'a','b',0,15]) == [1,0,15]
+// filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+// [P]arameters - takes array of numbers and strings
+// [R]eturns - returns new array with strings removed
+// [E]xample - 
+// [P]seudo Code: 
+
+
+function filter_list(l) {
+  l = l.filter(item => typeof item === 'number')
+  return l
+}
+
+
+// https://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/javascript
